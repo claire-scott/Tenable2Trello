@@ -16,16 +16,16 @@ class TenableTrelloIntegration(object):
 
     def __init__(self):
         self.trello_client = TrelloClient(
-                api_key='b21f444e87b41ef579932841e026aea0',
-                api_secret='4334bbc2a87ce3942fd6531bb47add57f97b7191703a3499eb89d506bba422eb',
-                token='eff7de29575d32b029ad8487a72dd680d0436bc11c098bbc9d7c53705af68738'
+                api_key='',
+                api_secret='',
+                token=''
         )
         
     def TenableIOExport(self):
         '''
         Instantiate an instance of the TenableIOClient.
         '''
-        client = TenableIOClient(access_key='0261d1c97111a4e5bca0c1b0d81d87b418b49b567dc0408a2cf117efa608d1d5', secret_key='199ffbaa401258d1a3b474b26df556adf182814b3ad433cb1d303719e9efa107')
+        client = TenableIOClient(access_key='', secret_key='')
     
         '''
         Export and download vulnerabilities.
@@ -66,10 +66,6 @@ class TenableTrelloIntegration(object):
         raise Exception('list {} not found'.format(name))
              
 
-
-#trello key   b21f444e87b41ef579932841e026aea0
-#secret 4334bbc2a87ce3942fd6531bb47add57f97b7191703a3499eb89d506bba422eb
-#trello token   eff7de29575d32b029ad8487a72dd680d0436bc11c098bbc9d7c53705af68738
 
 with open('c:/temp/tenable/vuln_1.json','r') as read_file:
     data = json.load(read_file)
