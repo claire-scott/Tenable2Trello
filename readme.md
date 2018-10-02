@@ -2,7 +2,7 @@ This python script allow you to import [Tenable IO scans](https://www.tenable.co
 
 ### Dependencies
 
-* Tenable IO library (tenabl_io)
+* Tenable IO library (tenable_io)
 * Trello library
 * Python 2.7+ or 3.3+
 
